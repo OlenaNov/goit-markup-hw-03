@@ -51,6 +51,16 @@ img {
 
 /* Студія header */
 
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -64,6 +74,10 @@ img {
 }
 
 .header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -75,10 +89,29 @@ img {
     color: var(--color-accent);
 }
 
+.list-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.list-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .link:hover,
 .link:focus {
     color: var(--color-accent);
 }
+
+.list-cont {
+    display: flex;
+    margin-left: auto;
+}
+
+.list-cont .item + .item {
+    margin-left: 50px;
+}
+
 
 .tel-mail {
     color: var(--color-text);
@@ -100,14 +133,18 @@ img {
     color: var(--color-light);
 }
 
+.cont-hero-btn{
+        text-align: center;
+}
+
 .hero-btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    /* display: flex;
+    align-items: center; */
+    /* text-align: center; */
     letter-spacing: 0.06em;
     color: var(--color-light);
     background-color: var(--color-accent);
@@ -229,8 +266,8 @@ color: var(--color-light);
 background-color: #2196F3;
 }
 
-.portf-link {
-}
+/* .portf-link {
+} */
 
 .portf-sutitle {
 font-weight: 700;
