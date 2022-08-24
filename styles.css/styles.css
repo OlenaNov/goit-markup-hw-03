@@ -18,10 +18,14 @@ background: #FFFFFF99; */
 }
 
 body {
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
 
-    background-color: var(--color-light);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+
+    background-color: var(--color-light);
 }
 
 h1, h2, h3, h4, p{
@@ -54,22 +58,21 @@ img {
 }
 
 .container {
-
-    /* (1600!!!!!) */
     width: 1200px;
-
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Студія header */
 
+.header {
+    border-bottom: 1px solid var(--color-border);
+}
 .container-header {
-    width: 1200px;
     display: flex;
     align-items: center;
-    
-    border-bottom: 1px solid var(--color-border);
 }
 
 .header-nav {
@@ -136,39 +139,34 @@ img {
 /* Студія hero */
 
 .hero-section {
-    padding-top: 252px;
-    padding-bottom: 252px;
+    padding-top: 203px;
+    padding-bottom: 203px;
 
     background-color: var(--color-back-secondary);
 }
 
 .hero {
-    width: 1200px;
+    width: 696px;
+    text-align: center;
+
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-light);
     margin-bottom: 30px;
 }
 
-.cont-hero-btn{
-        text-align: center;
-}
 
 .hero-btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* display: flex;
-    align-items: center; */
-    /* text-align: center; */
     letter-spacing: 0.06em;
     color: var(--color-light);
     background-color: var(--color-accent);
@@ -184,12 +182,13 @@ background: var(--color-active-btn);
 
 /* Студія Наші переваги */
 
-.container-our-adv {
-    width: 1200px;
-    padding-top: 86px;
-    padding-right: 15px;
+.sections {
+    padding-top: 94px;
     padding-bottom: 94px;
-    padding-left: 15px;
+}
+
+.main .sections:nth-child(3) {
+    padding-top: 0;
 }
 
 .list-our-adv .item {
@@ -200,27 +199,26 @@ background: var(--color-active-btn);
     display: flex;
 }
 
-.list-our-adv .item {
-    width: 270px;
-}
-
 .list-our-adv .item:not(:last-child) {
     margin-right: 30px;
 }
 
 .benefits-subtitle {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
 color: var(--color-title);
 }
 
 .benefits-text {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-color: var(--color-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--color-text);
 }
 
 .sections-title {
@@ -235,13 +233,6 @@ color: var(--color-title);
 
 /* Студія Чим ми займаємося */
 
-.container-our-work {
-    width: 1200px;
-    padding-right: 15px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-}
-
 .list-our-work {
     display: flex;
     justify-content: space-between;
@@ -249,13 +240,7 @@ color: var(--color-title);
 
 /* Студія Наша команда */
 
-.container-our-pro {
-    width: 1200px;
-    padding-top: 94px;
-    padding-right: 15px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-
+.sections-our-pro {
     background-color: var(--color-back-btn);
 }
 
@@ -300,13 +285,14 @@ color: var(--color-title);
 /* Студія footer */
 
 .footer {
-    width: 1200px;
     background-color: var(--color-back-secondary);
 }
 
 .container-footer {
     padding-top: 60px;
+    padding-right: auto;
     padding-bottom: 60px;
+    padding-left: 215px;
 }
 
 .footer-contacts {
@@ -317,6 +303,10 @@ color: var(--color-title);
 
 .accent-foot-logo {
     color: var(--color-light);
+}
+
+.footer-list-cont > .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-link-addr {
@@ -330,24 +320,17 @@ color: var(--color-title);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+
     color: var(--color-footer-link);
 }
 
 /* Портфоліо Приклади робіт */
 
-.container-work-examples {
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
 .list-portfolio-filter {
     display: flex;
     justify-content: center;
 
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .list-portfolio-filter .item:not(:last-child) {
@@ -398,18 +381,20 @@ color: var(--color-title);
 
 .list-portf-examples .item {
     width: 370px;
-    padding-bottom: 20px;
+
+}
+
+.card-text {
+    padding: 20px 24px;
     border: 1px solid var(--color-border-card);
 }
 
 .portf-sutitle {
-    margin-top: 20px;
-    margin-bottom: 4px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
     color: var(--color-title);
 }
 
