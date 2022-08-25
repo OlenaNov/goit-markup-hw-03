@@ -18,7 +18,7 @@ background: #FFFFFF99; */
 }
 
 body {
-    width: 1600px;
+    max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
 
@@ -139,19 +139,20 @@ img {
 /* Студія hero */
 
 .hero-section {
-    padding-top: 203px;
-    padding-bottom: 203px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 
     background-color: var(--color-back-secondary);
 }
 
 .hero {
     width: 696px;
-    text-align: center;
-
 }
 
 .hero-title {
+    width: 696px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -163,11 +164,13 @@ img {
 
 
 .hero-btn {
+    padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
     color: var(--color-light);
     background-color: var(--color-accent);
     box-shadow: 0px 4px 4px var(--color-shadow-card);
@@ -252,8 +255,7 @@ color: var(--color-title);
 
 .list-our-pro .item {
     width: 270px;
-    padding-bottom: 30px;
-
+    
     background-color: var(--color-light);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
      0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -263,7 +265,7 @@ color: var(--color-title);
 
 
 .our-pro-subtitle {
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 
@@ -275,30 +277,32 @@ color: var(--color-title);
 }
 
 .our-pro-text {
+    padding-bottom: 30px;
+
     text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+
     color: var(--color-text);
 }
 
 /* Студія footer */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--color-back-secondary);
 }
 
-.container-footer {
-    padding-top: 60px;
-    padding-right: auto;
-    padding-bottom: 60px;
-    padding-left: 215px;
+.footer-contacts {
+    font-style: normal;
 }
 
-.footer-contacts {
-    margin-top: 20px;
-
-    font-style: normal;
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .accent-foot-logo {
@@ -387,9 +391,12 @@ color: var(--color-title);
 .card-text {
     padding: 20px 24px;
     border: 1px solid var(--color-border-card);
+    border-top: none;
 }
 
 .portf-sutitle {
+    margin-bottom: 4px;
+    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
